@@ -1,8 +1,12 @@
 ﻿import React from 'react';
+import {Link} from "react-router-dom";
 
 function ContactListItem(props) {
+    const {contact} = props;
     return (
-        <div>ContactListItem</div>
+        <Link to={`/contacts/${contact.id}`}>
+            {`${contact.firstName} ${contact.lastName}`}
+        </Link>
     );
 }
 

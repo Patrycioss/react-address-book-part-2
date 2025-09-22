@@ -15,3 +15,12 @@
 .activeItem ul {
     padding-left: 0;
 }
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-contact-submit{
+    margin-top: 20px;
+}
